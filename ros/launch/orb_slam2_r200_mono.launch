@@ -2,7 +2,7 @@
   <node name="orb_slam2_mono" pkg="orb_slam2_ros"
       type="orb_slam2_ros_mono" output="screen">
 
-       <remap from="/camera/image_raw" to="/camera/rgb/image_raw" />
+       <remap from="/camera/image_raw" to="/camera/image_raw" />
 
        <param name="publish_pointcloud" type="bool" value="true" />
        <param name="publish_pose" type="bool" value="true" />
@@ -10,7 +10,7 @@
        <param name="reset_map" type="bool" value="false" />
 
        <!-- static parameters -->
-       <param name="load_map" type="bool" value="false" />
+       <param name="load_map" type="bool" value="true" />
        <param name="map_file" type="string" value="map.bin" />
        <param name="voc_file" type="string" value="$(find orb_slam2_ros)/orb_slam2/Vocabulary/ORBvoc.txt" />
 
@@ -35,15 +35,15 @@
         <!--If the node should wait for a camera_info topic to take the camera calibration data-->
        <param name="load_calibration_from_cam" type="bool" value="false" />
        <!-- Camera calibration and distortion parameters (OpenCV) -->
-      <param name="camera_fx" type="double" value="632.7927856445312" />
-      <param name="camera_fy" type="double" value="626.8605346679688" />
-      <param name="camera_cx" type="double" value="311.43603515625" />
-      <param name="camera_cy" type="double" value="248.0950164794922" />
+      <param name="camera_fx" type="double" value="543.3327734182214" />
+      <param name="camera_fy" type="double" value="542.398772982566" />
+      <param name="camera_cx" type="double" value="489.02536042247897" />
+      <param name="camera_cy" type="double" value="305.38727712002805" />
        <!-- Camera calibration and distortion parameters (OpenCV) -->
-      <param name="camera_k1" type="double" value="-0.09097914397716522" />
-      <param name="camera_k2" type="double" value="0.06503549218177795" />
-      <param name="camera_p1" type="double" value="0.000849052332341671" />
-      <param name="camera_p2" type="double" value="0.001785792293958366" />
+      <param name="camera_k1" type="double" value="-0.1255945656257394" />
+      <param name="camera_k2" type="double" value=" 0.053221287232781606" />
+      <param name="camera_p1" type="double" value="9.94070021080493e-05" />
+      <param name="camera_p2" type="double" value="9.550660927242349e-05" />
       <param name="camera_k3" type="double" value="0.0" />
   </node>
 </launch>
