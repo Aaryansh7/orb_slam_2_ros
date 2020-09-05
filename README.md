@@ -165,6 +165,11 @@ source devel/setup.bash
 
 Use the command from the corresponding cell for your camera to launch orb_slam2_ros with the right parameters for your setup.
 
+To print the poses
+```
+rosrun orb_slam2_ros poses_to_file.py
+```
+
 # 6. Docker
 An easy way is to use orb_slam2_ros with Docker. This repository ships with a Dockerfile based on ROS kinetic.
 The container includes orb_slam2_ros as well as the Intel RealSense package for quick testing and data collection.
